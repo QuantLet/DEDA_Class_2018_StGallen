@@ -6,10 +6,10 @@ Apelt, Gosselke, Sommer & Tuchschmid
 
 Use your terminal/command line to  navigate to the preferred location on your drive and execute the following command to download the whole project:
 ```bash
-git clone https://github.com/Sommer1872/smart_weather_analytics.git
+git clone https://github.com/QuantLet/DEDA_Class_2018_StGallen.git
 ```
 
-We highly encurage the use of anaconda as a package manager. If you have anaconda, you can simply `cd smart_weather_analytics` and then run:
+We highly encurage the use of anaconda as a package manager. If you have anaconda, you can simply `cd SmartWeatherAnalytics` and then run:
 ```bash
 conda env create -f requirements.yml
 ```
@@ -17,8 +17,8 @@ This creates a separate environment named `SWA` and automatically installs all t
 
 ## Run instructions
 There are two main approaches used:
-- You can run  [train_neural_networks.py](train_neural_networks.py) to train Neural Networks (fully connected and LSTM variants) that try to predict stock movements from weather data. 
-- [run_OLS_ARMA.py](run_OLS_ARMA.py) runs different regressions to detect a relationship between weather data and stock movements/volatility.
+- You can run  [TrainNeuralNetworks.py](TrainNeuralNetworks.py) to train Neural Networks (fully connected and LSTM variants) that try to predict stock movements from weather data. 
+- [RunOLSandARMA.py](RunOLSandARMA.py) runs different regressions to detect a relationship between weather data and stock movements/volatility.
 
 ## Data
 Currently, the analyses are done based on a small sample (October 2018) of the data. This will not deliver any meaningful results.
@@ -29,12 +29,12 @@ Otherwise, you can retrieve the data yourself from your preferred provider.
 
 You are going to need 2 files:
 
-`StockIndices.csv` has 3 columns:
+`sample_StockIndices.csv` has 3 columns:
 ```python
 Index;Date;Price Close
 ```
 
-and `Weather_ALL.csv` should look like this (8 columns):
+and `sample_Weather_ALL.csv` should look like this (8 columns):
 ```python
 Date;City;Mean Temperature Actual;Low Temperature Actual;High Temperature Actual;Precipitation Actual;Wind Speed Actual;Relative Humidity Actual
 ```
