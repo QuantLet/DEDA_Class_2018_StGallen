@@ -1,4 +1,4 @@
-Name of Quantlet:  DEDA_Class_2018_StGallen_LDA_Sentiments
+Name of Quantlet:  DEDA_Class_2018_StGallen_LDA_News
  
 Published in:      Smart Data Analytics
   
