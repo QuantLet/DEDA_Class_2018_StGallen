@@ -1,0 +1,11 @@
+Title: "Scagnostics of University Rankings"
+Subtitle: "Analysis of Financial Times Rankings for the Master in Management"
+Course: "Smart Data Analysis"
+M.A. Students: "Lars Stauffenegger Peter De Cour"
+Lecturer: "Professor Wolfgang Haerdle (HU Berlin)"
+Place, Time: "University of St. Gallen, 29.10.18 - 02.11.18"
+Key words: "Scagnostics, Minimum Spanning Tree, Convex Hull, Concave Hull, Scatter Plots"
+
+Description: "This uses the Financial Times Master in Management 2018 Ranking data to apply and develop methods in Scagnostics such as the Minimum Spanning Tree and Convex / Concave Hulls.
+The code was written within 1 week and is up to further development (see comments #TO DO in the code). The plotting works quiet well.
+However, it is the key figure C that needs inputs as area and edge length from these plots, which we have not been able to provide yet."
