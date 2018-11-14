@@ -38,7 +38,7 @@ city = "New York"
 def main():
     OLS_and_ARMA(index, city)
     OLS_global(index)
-    
+
     if "sample" in stock_path:
         print("\nxxxxxxxxxxxxxxxxx ATTENTION xxxxxxxxxxxxxxxxxxxx \n" +
             "This is only a small sample of the dataset (October 2018)" +
@@ -116,13 +116,13 @@ def OLS_and_ARMA(index, city):
     ax.set_title("Autocorrelation of {} returns".format(index))
     fig.savefig('./plots/acf_{}_returns.png'.format(index))
     plt.close()
-    
+
     fig, ax = plt.subplots(figsize=(25, 10))
     plot_pacf(data_cut['Return'], lags=10, ax=ax)
     ax.set_title("Partial Autocorrelation of {} returns".format(index))
     fig.savefig('./plots/pacf_{}_returns.png'.format(index))
     plt.close()
-    
+
     # ARMA11 NO exogenous variables
     model = SARIMAX(endog=Y, order=(1, 0, 1), enforce_stationarity=False)
     model_fit = model.fit(disp=1)
@@ -132,7 +132,7 @@ def OLS_and_ARMA(index, city):
     fig, ax = plt.subplots(figsize=(25, 10))
     residuals = pd.DataFrame(model_fit.resid)
     residuals.plot(ax=ax, title="Residuals")
-    
+
     fig, ax = plt.subplots(figsize=(25, 10))
     plot_pacf(residuals, lags=10, ax=ax)
     ax.set_title("Autocorrelation of {} residuals".format(index))
@@ -213,7 +213,7 @@ def OLS_global(index):
     model, predictions = estimate_linear(stock_index.dropna(), 'LogReturns',
                                          regressors)
 
-    plot_and_save_stats(model, index)
+    plot_and_save_stats(model, index + "_global")
 
     print("Done :)\n")
 
@@ -237,7 +237,7 @@ def plot_and_save_stats(model, name):
         fontproperties='monospace')
     plt.axis('off')
     plt.tight_layout()
-    filename = './plots/{}_OLS_global.png'.format(name)
+    filename = './plots/{}_OLS.png'.format(name)
     plt.savefig(filename)
     print("Saved regression results under {}\n".format(filename))
     plt.close()

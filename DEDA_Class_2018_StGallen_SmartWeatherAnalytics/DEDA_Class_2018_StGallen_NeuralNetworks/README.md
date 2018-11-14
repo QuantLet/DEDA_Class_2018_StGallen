@@ -5,21 +5,18 @@
 ```yaml
 
 
-Name of Quantlet: 'SmartWeatherAnalytics'
+Name of Quantlet: 'DEDA_Class_2018_StGallen_NeuralNetworks'
 
 Published in: 'Unpublished'
 
-Description: 'This Quantlet contains two analyses of the relationship between weather data
- and stock returns. RunOLSandARMA.py estimates parameters
- of different linear and autoregressive models. TrainNeuralNetwork.py sequentially runs different
+Description: 'This Quantlet contains one of two analyses that explore the relationship between weather data
+ and stock returns. TrainNeuralNetwork.py sequentially runs different
  configurations of neural networks, aiming to predict stock returns from weather data.'
 
 Keywords:
 - weather
 - stocks
 - returns
-- OLS
-- ARMA
 - Neural Networks
 - LSTM
 
@@ -29,12 +26,15 @@ Author:
 - Simon Sommer
 - Ludociv Tuchschmid
 
-Submitted: '12th November 2018'
+See also:
+- DEDA_Class_2018_StGallen_OLSandARMA
+
+Submitted: '14th November 2018'
 
 Datafile:
 - sample_data/
-- jupyter_notebooks/
-- utils/
-- requirements.yml
+
+Example:
+- NN_loss.png
 
 ```
