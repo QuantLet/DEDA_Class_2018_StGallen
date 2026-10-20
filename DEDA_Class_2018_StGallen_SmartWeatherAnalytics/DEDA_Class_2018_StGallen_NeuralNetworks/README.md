@@ -9,7 +9,7 @@ Name of Quantlet: DEDA_Class_2018_StGallen_NeuralNetworks
 
 Published in: Unpublished
 
-Description: This Quantlet contains one of two analyses that explore the relationship between weather data
+Description: This Quantlet contains one of two analyses that explore the relationship between weather data and stock returns. TrainNeuralNetwork.py sequentially runs different configurations of neural networks, aiming to predict stock returns from weather data.
 
 Keywords: 
 - weather
