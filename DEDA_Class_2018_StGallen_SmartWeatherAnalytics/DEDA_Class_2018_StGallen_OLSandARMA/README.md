@@ -9,7 +9,7 @@ Name of Quantlet: DEDA_Class_2018_StGallen_OLSandARMA
 
 Published in: Unpublished
 
-Description: This Quantlet contains one of two analyses that explore the relationship between weather data
+Description: This Quantlet contains one of two analyses that explore the relationship between weather data and stock returns. RunOLSandARMA.py estimates parameters of different linear and autoregressive models.
 
 Keywords: 
 - weather
